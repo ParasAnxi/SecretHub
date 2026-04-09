@@ -56,7 +56,7 @@ model Post {
   author    User     @relation(fields: [authorId], references: [id])
   caption   String?
   type      PostType
-  media     Json
+  media     String
   viewCount Int      @default(0)
   createdAt DateTime @default(now())
 }
